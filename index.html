@@ -165,24 +165,17 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     <meta property="og:site_name" content="Loja Faber-Castell Oficial - Entrega para Todo Brasil.">
     <meta property="og:url" content="https://www.lojafabercastell.com.br/">
     <script async="" src="https://cdn2.123tp.net/189b806a53ea4c7aa467f38563bf6c94/js/gtm.js"></script>
-    <script type="text/javascript">
-        /* Google DataLayer Parameters */
-        dataLayer = [{
-            'pageTitle': 'Loja Faber-Castell Oficial - Entrega para Todo Brasil.',
-            'pageCategory': '',
-            'pageSubCategory': '',
-            'pageAttributes': 'hotsite',
-            'visitorLoginState': 'notlogged',
-            'visitorLoginEmail': '',
-            'siteSearchTerm': '',
-            'siteSearchFrom': '',
-            'siteSearchCategory': '',
-            'siteSearchResults': 0,
-            'siteSearchStatus': 'True',
-        }];
-        var csrf_token = "Ijc1OTUwYjc4NzU0YWExNjhlYTlmODA5MWU2YjMwMWUxMTQxMTVhYzEi.ZZwgOg.VrDWoEZ1-nmYQ_sN38Zq3kqJ8MM";
-        var token_cod_site = "F49EB871-5136-4CFE-BFF3-64411B3B57DB";
-    </script>
+    <script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
     <link rel="canonical" href="https://www.lojafabercastell.com.br/hotsite/politica-de-privacidade">
     <title>Loja Faber-Castell Oficial - Entrega para Todo Brasil.</title>
     <meta name="description" content="Aqui você encontra os produtos da Faber-Castell e compra sem sair de casa. Linha escolar, profissional, SuperSoft, Lápis de Cor, Fine Pen e muito mais.">
@@ -25076,17 +25069,4 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 
 
                     <script async="true" src="https://cdn1.123tp.net/js/123global.js"></script>
-					
-					<script>
-    window.onload = function () {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i < n; i++) {
-            var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                    document.location.search.replace('?', '').toString();
-            links[i].href = href;
-        }
-    }
-</script>
-					
                 </body></html>
